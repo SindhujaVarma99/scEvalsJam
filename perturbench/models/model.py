@@ -1,12 +1,16 @@
+# Define the RandomModel with model_name
+# PerturbationModel abstract class
 from abc import ABC, abstractmethod
+from typing import List, Any
+import numpy as np
 import scipy as sp
-import pathlib
+import pandas as pd
+import anndata as ad
 import torch
-from typing import List
-
+import pathlib
+import uuid
+import os
 from perturbench.dataset import PerturbationDataset
-
-
 class PerturbationModel(ABC):
     """Class responsible for instantiating a model, training a model and performing a prediction."""
 

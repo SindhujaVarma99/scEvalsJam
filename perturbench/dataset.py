@@ -2,7 +2,6 @@ import scipy as sp
 import pandas as pd
 import anndata as ad
 
-
 class PerturbationDataset:
     """Class responsible for providing perturbation data for model training and prediction, as well as
     harmonising the attributes available in a dataset. Uses AnnData."""
